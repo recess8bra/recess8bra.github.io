@@ -1,0 +1,1005 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>51羞漫画_国产原创漫画在线看_羞羞漫画分类与更新榜</title>
+<meta name="description" content="51羞漫画汇集国产原创漫画的连载更新、分类索引与读者口碑排行，涵盖都市、校园、悬疑、古风、恋爱等题材，提供具体条目的章节动态、看点解读与阅读顺序建议，适合漫画老读者与新入坑用户按需筛选追更内容。">
+<meta name="keywords" content="原创漫画连载,国漫分类索引,羞羞漫画更新,都市悬疑漫画,校园恋爱漫画,古风漫画榜单">
+<style>
+:root{
+  --ink:#1b1a22;
+  --ink-2:#3a3846;
+  --ink-3:#6b6878;
+  --line:#e6e2ee;
+  --line-2:#f2eff7;
+  --bg:#faf8fd;
+  --panel:#ffffff;
+  --brand:#7b2ff7;
+  --brand-2:#b437a8;
+  --brand-soft:#f3ebff;
+  --accent:#ff5c8a;
+  --accent-soft:#ffeaf1;
+  --gold:#f0a020;
+  --ok:#1f9d6b;
+  --radius:14px;
+  --radius-sm:9px;
+  --shadow:0 2px 10px rgba(60,30,110,.06);
+  --shadow-lg:0 10px 30px rgba(60,30,110,.10);
+  --maxw:1320px;
+  --stick:118px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--stick)}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:15px;line-height:1.75;-webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:800;letter-spacing:-.2px}
+p{margin:0 0 .8em}
+ul,ol{margin:0 0 .8em;padding-left:1.2em}
+li{margin-bottom:.35em}
+button{font-family:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--brand);outline-offset:2px;border-radius:6px}
+
+/* ============ 吸顶公告 + 页头 ============ */
+.stickwrap{position:sticky;top:0;z-index:60}
+.notice{
+  background:linear-gradient(90deg,#2a0f52,#5b1d9e 55%,#8a2bb5);
+  color:#f5ecff;font-size:13px;
+}
+.notice-in{
+  max-width:var(--maxw);margin:0 auto;padding:8px 20px;
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+}
+.notice .dot{
+  width:7px;height:7px;border-radius:50%;background:#7cf2c0;flex:none;
+  box-shadow:0 0 0 4px rgba(124,242,192,.18);
+}
+.notice strong{color:#fff;font-weight:700}
+.notice .nlist{display:flex;gap:14px;flex-wrap:wrap;color:#dccdf5}
+.notice .nlist span{white-space:nowrap}
+
+.header{background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.header-in{
+  max-width:var(--maxw);margin:0 auto;padding:10px 20px;
+  display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+}
+.logo{display:flex;align-items:center;gap:10px;flex:none}
+.logo-mark{width:40px;height:40px;flex:none}
+.logo-text{display:flex;flex-direction:column;line-height:1.15}
+.logo-text b{font-size:19px;letter-spacing:.5px;color:var(--ink)}
+.logo-text span{font-size:11px;color:var(--ink-3);letter-spacing:2px}
+.nav{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+.nav a{
+  padding:7px 12px;border-radius:99px;font-size:14px;color:var(--ink-2);
+  transition:background .15s,color .15s;white-space:nowrap;
+}
+.nav a:hover{background:var(--brand-soft);color:var(--brand)}
+.hbtn{
+  display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:99px;
+  background:var(--brand);color:#fff;font-size:14px;font-weight:700;border:0;
+  box-shadow:0 4px 14px rgba(123,47,247,.28);white-space:nowrap;
+}
+.hbtn:hover{background:#6a1ee0}
+
+/* ============ 首屏 ============ */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(900px 420px at 82% -8%,rgba(255,92,138,.20),transparent 62%),
+    radial-gradient(760px 400px at 8% 6%,rgba(123,47,247,.22),transparent 60%),
+    linear-gradient(170deg,#1a0d2e 0%,#2b1247 48%,#3d1552 100%);
+  color:#f4eeff;
+}
+.hero-in{
+  max-width:var(--maxw);margin:0 auto;padding:52px 20px 46px;
+  display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:38px;align-items:center;
+}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;padding:5px 13px;border-radius:99px;
+  background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.20);
+  font-size:12.5px;color:#e8d9ff;letter-spacing:1px;margin-bottom:18px;
+}
+.hero h1{font-size:clamp(30px,4.4vw,48px);letter-spacing:-.5px;margin-bottom:16px}
+.hero h1 em{
+  font-style:normal;
+  background:linear-gradient(92deg,#ff8fb1,#ffd166);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero p.lead{font-size:15.5px;color:#d5c8ee;max-width:44em;margin-bottom:24px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:99px;
+  border:1px solid rgba(255,255,255,.32);color:#f2e9ff;font-size:14px;font-weight:600;
+  background:rgba(255,255,255,.06);
+}
+.btn-ghost:hover{background:rgba(255,255,255,.14)}
+.hero-stats{display:flex;gap:26px;flex-wrap:wrap;padding-top:6px;border-top:1px solid rgba(255,255,255,.14)}
+.hero-stats div{font-size:12.5px;color:#bda9dd}
+.hero-stats b{display:block;font-size:22px;color:#fff;letter-spacing:-.5px}
+.hero-art{position:relative;min-height:300px}
+.hero-art svg{width:100%;height:auto;display:block;filter:drop-shadow(0 20px 40px rgba(0,0,0,.35))}
+
+/* ============ 布局 ============ */
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+.layout{
+  display:grid;grid-template-columns:176px minmax(0,1fr) 274px;
+  gap:26px;align-items:start;padding:32px 0 10px;
+}
+.sidebar{position:sticky;top:calc(var(--stick) + 14px);font-size:14px}
+.panel{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow);padding:16px;margin-bottom:18px;
+}
+.panel h3{font-size:13.5px;letter-spacing:.6px;color:var(--ink-3);font-weight:700;text-transform:uppercase;margin-bottom:12px}
+.chan-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:2px}
+.chan-list a{
+  display:flex;align-items:center;justify-content:space-between;gap:8px;
+  padding:7px 10px;border-radius:var(--radius-sm);color:var(--ink-2);font-size:14px;
+}
+.chan-list a:hover{background:var(--brand-soft);color:var(--brand)}
+.chan-list a span{font-size:11.5px;color:var(--ink-3)}
+.chan-list a:hover span{color:var(--brand-2)}
+
+.rank-list{list-style:none;padding:0;margin:0;counter-reset:rk}
+.rank-list li{counter-increment:rk;display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px dashed var(--line-2)}
+.rank-list li:last-child{border-bottom:0}
+.rank-list li::before{
+  content:counter(rk);flex:none;width:20px;height:20px;border-radius:6px;
+  background:var(--line-2);color:var(--ink-3);font-size:11.5px;font-weight:800;
+  display:grid;place-items:center;margin-top:3px;
+}
+.rank-list li:nth-child(-n+3)::before{background:linear-gradient(135deg,var(--brand),var(--accent));color:#fff}
+.rank-list .rk-t{font-size:13.5px;font-weight:700;color:var(--ink);line-height:1.4}
+.rank-list .rk-m{font-size:11.5px;color:var(--ink-3)}
+
+/* 主内容 */
+main{min-width:0}
+.sec{margin-bottom:38px;scroll-margin-top:var(--stick)}
+.sec-head{display:flex;align-items:flex-end;gap:12px;margin-bottom:16px;flex-wrap:wrap}
+.sec-head h2{font-size:21px;letter-spacing:-.3px}
+.sec-head .sub{font-size:13px;color:var(--ink-3);padding-bottom:3px}
+.sec-head .more{margin-left:auto;font-size:13px;color:var(--brand);font-weight:700}
+
+/* 概览 */
+.overview{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px 24px;box-shadow:var(--shadow);
+}
+.overview p{color:var(--ink-2);font-size:14.5px}
+.overview .kw{color:var(--brand);font-weight:700}
+.ov-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:16px}
+.ov-cell{background:var(--brand-soft);border-radius:var(--radius-sm);padding:12px 14px}
+.ov-cell b{display:block;font-size:15px;color:var(--brand-2);margin-bottom:2px}
+.ov-cell span{font-size:12.5px;color:var(--ink-3);line-height:1.6;display:block}
+
+/* 精选卡片 */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:16px}
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;
+  transition:transform .16s,box-shadow .16s;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.card .cover{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--line-2)}
+.card .cover img{width:100%;height:100%;object-fit:cover}
+.card .badge{
+  position:absolute;left:9px;top:9px;padding:3px 9px;border-radius:99px;
+  background:rgba(20,10,40,.76);color:#fff;font-size:11px;font-weight:700;backdrop-filter:blur(3px);
+}
+.card .heat{
+  position:absolute;right:9px;bottom:9px;padding:3px 9px;border-radius:99px;
+  background:rgba(255,92,138,.92);color:#fff;font-size:11px;font-weight:700;
+}
+.card-body{padding:13px 14px 15px;display:flex;flex-direction:column;gap:7px;flex:1}
+.card-body h3{font-size:15px;line-height:1.4}
+.card-body .look{font-size:12.8px;color:var(--ink-3);line-height:1.65;flex:1}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{
+  font-size:11.5px;padding:2px 8px;border-radius:99px;
+  background:var(--line-2);color:var(--ink-3);
+}
+.tag.p{background:var(--accent-soft);color:#c13368}
+.card-meta{display:flex;justify-content:space-between;align-items:center;font-size:11.5px;color:var(--ink-3);border-top:1px solid var(--line-2);padding-top:8px}
+.score{color:var(--gold);font-weight:800}
+
+/* 更新动态 */
+.updates{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.upd-row{display:flex;gap:12px;padding:12px 18px;border-bottom:1px solid var(--line-2);align-items:baseline;flex-wrap:wrap}
+.upd-row:last-child{border-bottom:0}
+.upd-row:hover{background:#fcfaff}
+.upd-time{flex:none;font-size:12px;color:var(--brand);font-weight:700;width:74px}
+.upd-name{font-size:14px;font-weight:700;color:var(--ink);flex:none}
+.upd-desc{font-size:13px;color:var(--ink-3);flex:1;min-width:180px}
+.newflag{font-size:10.5px;background:var(--accent);color:#fff;border-radius:4px;padding:1px 6px;font-weight:800;margin-left:6px}
+
+/* 分类入口 */
+.cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.cat{
+  display:block;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:13px 14px;transition:border-color .15s,background .15s;
+}
+.cat:hover{border-color:var(--brand);background:#fbf8ff}
+.cat b{display:block;font-size:14.5px;margin-bottom:3px}
+.cat span{font-size:12px;color:var(--ink-3);line-height:1.55;display:block}
+
+/* 深度解析 */
+.deep{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:26px 28px;box-shadow:var(--shadow)}
+.deep h3{font-size:17px;margin:24px 0 10px;padding-left:12px;border-left:4px solid var(--brand)}
+.deep h3:first-of-type{margin-top:6px}
+.deep p{color:var(--ink-2);font-size:14.6px}
+.deep ul{color:var(--ink-2);font-size:14.6px}
+.deep li b{color:var(--ink)}
+.cmp{width:100%;border-collapse:collapse;margin:14px 0 6px;font-size:13.4px}
+.cmp th,.cmp td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+.cmp th{background:var(--brand-soft);color:var(--brand-2);font-weight:700;white-space:nowrap}
+.cmp td{color:var(--ink-2)}
+.cmp tr:nth-child(even) td{background:#fdfcff}
+
+/* 指南步骤 */
+.steps{counter-reset:st;display:grid;gap:12px}
+.step{
+  display:flex;gap:14px;background:var(--panel);border:1px solid var(--line);
+  border-radius:var(--radius-sm);padding:15px 17px;box-shadow:var(--shadow);
+}
+.step::before{
+  counter-increment:st;content:counter(st);flex:none;width:30px;height:30px;border-radius:9px;
+  background:linear-gradient(135deg,var(--brand),var(--accent));color:#fff;
+  font-weight:800;font-size:14px;display:grid;place-items:center;
+}
+.step b{display:block;font-size:14.5px;margin-bottom:3px}
+.step p{margin:0;font-size:13.2px;color:var(--ink-3)}
+
+/* FAQ */
+.faq details{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:0;margin-bottom:10px;box-shadow:var(--shadow);overflow:hidden;
+}
+.faq summary{
+  list-style:none;cursor:pointer;padding:14px 18px;font-weight:700;font-size:14.5px;
+  display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"＋";color:var(--brand);font-weight:800;font-size:16px;flex:none}
+.faq details[open] summary::after{content:"－"}
+.faq details[open] summary{border-bottom:1px solid var(--line-2);background:#fcfaff}
+.faq .ans{padding:13px 18px 16px;font-size:13.8px;color:var(--ink-2)}
+
+/* 评论 */
+.cmts{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:13px}
+.cmt{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);padding:13px 15px;box-shadow:var(--shadow)}
+.cmt .who{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.avatar{
+  width:26px;height:26px;border-radius:50%;flex:none;display:grid;place-items:center;
+  color:#fff;font-size:12px;font-weight:800;
+}
+.cmt .who b{font-size:13px}
+.cmt .who i{font-style:normal;font-size:11px;color:var(--ink-3);margin-left:auto}
+.cmt p{margin:0;font-size:13.2px;color:var(--ink-2);line-height:1.68}
+
+/* 资讯 */
+.news{display:grid;gap:12px}
+.news-item{
+  display:grid;grid-template-columns:150px minmax(0,1fr);gap:15px;
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);
+  overflow:hidden;box-shadow:var(--shadow);
+}
+.news-item img{width:100%;height:100%;object-fit:cover;min-height:96px}
+.news-body{padding:12px 15px 13px 0}
+.news-body h3{font-size:14.6px;margin-bottom:4px}
+.news-body .dt{font-size:11.5px;color:var(--brand);font-weight:700;margin-bottom:4px}
+.news-body p{margin:0;font-size:12.9px;color:var(--ink-3);line-height:1.62}
+
+/* 相关推荐标签 */
+.relwrap{display:flex;flex-wrap:wrap;gap:9px}
+.rel{
+  display:inline-flex;align-items:center;gap:6px;font-size:13px;padding:7px 14px;
+  border-radius:99px;border:1px solid var(--line);background:var(--panel);color:var(--ink-2);
+  box-shadow:var(--shadow);
+}
+.rel:hover{border-color:var(--brand);color:var(--brand);background:#fbf8ff}
+.rel i{font-style:normal;font-size:11px;color:var(--ink-3)}
+
+/* 时间线 */
+.timeline{position:relative;padding-left:22px}
+.timeline::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:linear-gradient(180deg,var(--brand),var(--accent),transparent)}
+.tl-item{position:relative;padding:0 0 18px 6px}
+.tl-item::before{
+  content:"";position:absolute;left:-21px;top:6px;width:10px;height:10px;border-radius:50%;
+  background:#fff;border:2.5px solid var(--brand);
+}
+.tl-item .tl-d{font-size:12px;color:var(--brand-2);font-weight:700}
+.tl-item b{font-size:14px;display:block;margin:1px 0 2px}
+.tl-item p{margin:0;font-size:13px;color:var(--ink-3)}
+
+/* 引用卡 */
+.quote{
+  background:linear-gradient(135deg,#2a1245,#4b1668);color:#f0e6ff;border-radius:var(--radius);
+  padding:24px 26px;box-shadow:var(--shadow-lg);
+}
+.quote p{font-size:15px;line-height:1.85;margin-bottom:12px}
+.quote .by{font-size:12.5px;color:#c6b2e6}
+
+/* 页尾 */
+footer{background:#160c26;color:#c8bcdd;margin-top:26px}
+.foot-in{max-width:var(--maxw);margin:0 auto;padding:40px 20px 26px}
+.foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:26px;margin-bottom:28px}
+.foot-top h4{color:#fff;font-size:13.5px;letter-spacing:.6px;margin-bottom:11px}
+.foot-top a{display:block;font-size:13px;padding:3px 0;color:#b3a3cc}
+.foot-top a:hover{color:#fff}
+.foot-brand b{font-size:19px;color:#fff;display:block;margin-bottom:8px}
+.foot-brand p{font-size:13px;color:#a596bf;line-height:1.75;max-width:32em}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.10);padding-top:16px;font-size:12px;color:#8d7fa8;display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between}
+
+/* 返回顶部 */
+.top-btn{
+  position:fixed;right:18px;bottom:22px;z-index:70;width:44px;height:44px;border-radius:50%;
+  background:var(--brand);color:#fff;border:0;font-size:18px;box-shadow:var(--shadow-lg);
+  display:grid;place-items:center;opacity:.92;
+}
+.top-btn:hover{opacity:1}
+
+/* ============ 响应式 ============ */
+@media (max-width:1120px){
+  .layout{grid-template-columns:158px minmax(0,1fr);gap:22px}
+  .rail-right{display:none}
+  .hero-in{grid-template-columns:1fr;gap:26px}
+  .hero-art{max-width:460px;margin:0 auto}
+  .foot-top{grid-template-columns:1fr 1fr}
+}
+@media (max-width:1024px){
+  :root{--stick:112px}
+  .layout{grid-template-columns:minmax(0,1fr)}
+  .sidebar-left{position:static;order:2}
+  .chan-list{flex-direction:row;flex-wrap:wrap;gap:6px}
+  .chan-list li{flex:0 0 auto}
+  .chan-list a{background:var(--line-2);padding:6px 12px;border-radius:99px}
+  .chan-list a span{display:none}
+}
+@media (max-width:740px){
+  :root{--stick:104px}
+  .header-in{padding:8px 14px;gap:10px}
+  .nav{order:3;width:100%;margin-left:0;overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px}
+  .nav a{background:var(--line-2)}
+  .hbtn{margin-left:auto;padding:7px 13px;font-size:13px}
+  .hero-in{padding:34px 14px 32px}
+  .wrap{padding:0 14px}
+  .layout{padding:22px 0 6px}
+  .news-item{grid-template-columns:1fr}
+  .news-item img{height:150px}
+  .news-body{padding:0 15px 14px}
+  .deep{padding:20px 18px}
+  .overview{padding:18px 16px}
+  .foot-top{grid-template-columns:1fr 1fr;gap:18px}
+  .top-btn{right:12px;bottom:14px;width:40px;height:40px}
+  .hero-stats{gap:18px}
+}
+@media (max-width:420px){
+  .cards{grid-template-columns:1fr}
+  .cmts{grid-template-columns:1fr}
+  .cats{grid-template-columns:1fr 1fr}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<div class="stickwrap">
+  <div class="notice" role="status">
+    <div class="notice-in">
+      <span class="dot" aria-hidden="true"></span>
+      <strong>本周更新</strong>
+      <div class="nlist">
+        <span>11 月 25 日新增 14 话连载</span>
+        <span>《雾港档案》第二季开更</span>
+        <span>悬疑分类新增 6 部作品</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="header-in">
+      <a class="logo" href="/#top" aria-label="51羞漫画 首页">
+        <svg class="logo-mark" viewBox="0 0 48 48" role="img" aria-hidden="true">
+          <defs>
+            <linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#7b2ff7"/><stop offset="1" stop-color="#ff5c8a"/>
+            </linearGradient>
+          </defs>
+          <rect x="2" y="4" width="44" height="40" rx="11" fill="url(#lg1)"/>
+          <path d="M13 15h9a6 6 0 0 1 0 12h-9z" fill="#fff" opacity=".95"/>
+          <path d="M13 27h9a6 6 0 0 1 0 12h-9z" fill="#fff" opacity=".6"/>
+          <circle cx="34" cy="17" r="4" fill="#ffe08a"/>
+          <circle cx="34" cy="32" r="4" fill="#7cf2c0"/>
+        </svg>
+        <span class="logo-text"><b>51羞漫画</b><span>ORIGINAL COMICS</span></span>
+      </a>
+      <nav class="nav" aria-label="主题导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#picks">精选推荐</a>
+        <a href="/#updates">更新动态</a>
+        <a href="/#cats">分类索引</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">阅读指南</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#rank">热度榜</a>
+      </nav>
+      <button class="hbtn" type="button" onclick="document.getElementById('picks').scrollIntoView()">开始追更</button>
+    </div>
+  </header>
+</div>
+
+<section class="hero" id="top">
+  <div class="hero-in">
+    <div>
+      <span class="hero-tag">国产原创 · 连载更新 · 读者口碑</span>
+      <h1>51羞漫画</h1>
+      <p class="lead">从都市悬疑到校园恋爱，从古风权谋到轻喜剧日常——这里按题材、更新节奏与读者口碑整理国产原创漫画的连载脉络，帮你判断一部作品现在值不值得入坑、从第几话开始追最舒服。</p>
+      <div class="hero-actions">
+        <a class="hbtn" href="/#picks">看本周精选 8 部</a>
+        <a class="btn-ghost" href="/#updates">今日更新 14 话 →</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>1,860+</b>在更条目</div>
+        <div><b>14</b>今日更新话数</div>
+        <div><b>9</b>题材分类</div>
+        <div><b>4.7</b>本周均分</div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 420 320" role="img">
+        <defs>
+          <linearGradient id="card1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#ff8fb1"/><stop offset="1" stop-color="#ffd166"/>
+          </linearGradient>
+          <linearGradient id="card2" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#7cf2c0"/><stop offset="1" stop-color="#5aa9ff"/>
+          </linearGradient>
+        </defs>
+        <rect x="34" y="46" width="180" height="232" rx="16" fill="url(#card1)" opacity=".92" transform="rotate(-7 124 162)"/>
+        <rect x="196" y="20" width="180" height="240" rx="16" fill="#ffffff" opacity=".14"/>
+        <rect x="212" y="40" width="148" height="82" rx="10" fill="url(#card2)" opacity=".85"/>
+        <rect x="212" y="136" width="106" height="11" rx="5.5" fill="#ffffff" opacity=".7"/>
+        <rect x="212" y="158" width="140" height="11" rx="5.5" fill="#ffffff" opacity=".42"/>
+        <rect x="212" y="180" width="88" height="11" rx="5.5" fill="#ffffff" opacity=".42"/>
+        <rect x="212" y="212" width="62" height="24" rx="12" fill="#ff5c8a"/>
+        <circle cx="352" cy="286" r="18" fill="#7b2ff7" opacity=".8"/>
+        <circle cx="60" cy="286" r="12" fill="#ffd166" opacity=".85"/>
+        <path d="M60 62 L96 30 L132 62 L96 94 Z" fill="#ffffff" opacity=".16"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="layout">
+
+    <!-- 左频道栏 -->
+    <aside class="sidebar sidebar-left" aria-label="频道索引">
+      <div class="panel">
+        <h3>题材频道</h3>
+        <ul class="chan-list">
+          <li><a href="/#cats">都市悬疑 <span>268</span></a></li>
+          <li><a href="/#cats">校园恋爱 <span>312</span></a></li>
+          <li><a href="/#cats">古风权谋 <span>204</span></a></li>
+          <li><a href="/#cats">奇幻冒险 <span>186</span></a></li>
+          <li><a href="/#cats">日常轻喜剧 <span>241</span></a></li>
+          <li><a href="/#cats">科幻赛博 <span>97</span></a></li>
+          <li><a href="/#cats">治愈生活 <span>158</span></a></li>
+          <li><a href="/#cats">热血竞技 <span>132</span></a></li>
+          <li><a href="/#cats">短篇实验 <span>262</span></a></li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>快捷入口</h3>
+        <ul class="chan-list">
+          <li><a href="/#updates">今日更新</a></li>
+          <li><a href="/#rank">口碑榜</a></li>
+          <li><a href="/#timeline">连载时间线</a></li>
+          <li><a href="/#faq">新读者问答</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- 主内容 -->
+    <main>
+
+      <!-- 1 概览 -->
+      <section class="sec" id="overview">
+        <div class="sec-head">
+          <h2>国产原创漫画的题材版图</h2>
+          <span class="sub">当前值得关注的方向</span>
+        </div>
+        <div class="overview">
+          <p><span class="kw">51羞漫画</span>所对应的领域，是以国产原创连载漫画为主体、按题材与更新节奏组织起来的内容生态。它大致可以拆成几条主线：都市悬疑依托现实场景做推理与反转，节奏偏冷、信息密度高；校园恋爱以日常互动推进情感，单话篇幅短、追更门槛低；古风权谋靠人物关系与势力博弈支撑长线剧情，适合愿意投入时间的读者；奇幻冒险和科幻赛博更依赖世界观设定与画面张力，开篇三话往往决定读者是否留下。</p>
+          <p>近两年明显的变化是短篇实验作品增多，单部 10 到 20 话完结，题材上更愿意试错；同时连载作品的分镜节奏在加快，前两话就抛出核心悬念成为常见做法。对读者来说，这意味着入坑成本下降，但判断一部作品是否合口味，需要看得更细：连载稳定性、单话信息量、主角动机是否立得住，往往比题材标签更能决定追更体验。</p>
+          <div class="ov-grid">
+            <div class="ov-cell"><b>连载型</b><span>每周固定更新，单话 20—40 页，适合长期追更。</span></div>
+            <div class="ov-cell"><b>季播型</b><span>一季 12—16 话，完结后整季补看体验更完整。</span></div>
+            <div class="ov-cell"><b>短篇实验</b><span>10 话内完结，题材大胆，适合碎片时间试读。</span></div>
+            <div class="ov-cell"><b>单元剧</b><span>每话独立事件，主线弱，任意一话都能进入。</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2 精选推荐 -->
+      <section class="sec" id="picks">
+        <div class="sec-head">
+          <h2>本周精选 8 部</h2>
+          <span class="sub">按题材覆盖，非单一榜单</span>
+          <a class="more" href="/#updates">查看更新 →</a>
+        </div>
+        <div class="cards">
+
+          <article class="card">
+            <div class="cover">
+              <img src="https://picsum.photos/seed/wugang-dangan21/400/300" width="400" height="300" loading="lazy" alt="雾港档案悬疑漫画封面">
+              <span class="badge">都市悬疑</span>
+              <span class="heat">9.2 分</span>
+            </div>
+            <div class="card-body">
+              <h3>雾港档案</h3>
+              <div class="tags"><span class="tag p">刑侦推理</span><span class="tag">双线叙事</span><span class="tag">周更</span></div>
+              <p class="look">以海港小城的旧案重启为主线，第二季把视角切到法医一侧。看点在于每话结尾都会留一个物证钩子，读起来像在拼图。</p>
+              <div class="card-meta"><span>更新至 第 42 话</span><span class="score">9.2</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="cover">
+              <img src="https://picsum.photos/seed/xiaoyuan-xiatian08/400/300" width="400" height="300" loading="lazy" alt="十七岁的夏天校园恋爱漫画封面">
+              <span class="badge">校园恋爱</span>
+              <span class="heat">8.7 分</span>
+            </div>
+            <div class="card-body">
+              <h3>十七岁的夏天</h3>
+              <div class="tags"><span class="tag p">青春日常</span><span class="tag">双向暗恋</span><span class="tag">短话</span></div>
+              <p class="look">高三最后一个学期，两个人在同一间自习室待了 60 天。单话 18 页左右，适合通勤路上看，情感推进靠细节不靠台词。</p>
+              <div class="card-meta"><span>更新至 第 61 话</span><span class="score">8.7</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="cover">
+              <img src="https://picsum.photos/seed/changan-quanmou13/400/300" width="400" height="300" loading="lazy" alt="长安棋局古风权谋漫画封面">
+              <span class="badge">古风权谋</span>
+              <span class="heat">9.0 分</span>
+            </div>
+            <div class="card-body">
+              <h3>长安棋局</h3>
+              <div class="tags"><span class="tag p">朝堂博弈</span><span class="tag">群像</span><span class="tag">双周更</span></div>
+              <p class="look">以一场科举舞弊案牵出三方势力，人物多但不乱。看点在于每个配角都有自己的算盘，读的时候要留意对话里的称呼变化。</p>
+              <div class="card-meta"><span>更新至 第 88 话</span><span class="score">9.0</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="cover">
+              <img src="https://picsum.photos/seed/xinghai-qihang05/400/300" width="400" height="300" loading="lazy" alt="星海启航科幻赛博漫画封面">
+              <span class="badge">科幻赛博</span>
+              <span class="heat">8.9 分</span>
+            </div>
+            <div class="card-body">
+              <h3>星海启航</h3>
+              <div class="tags"><span class="tag p">太空歌剧</span><span class="tag">机甲</span><span class="tag">月更</span></div>
+              <p class="look">一支打捞队在废弃空间站发现休眠舱，世界观铺得慢但很稳。画面是这部的强项，大场景跨页值得单独放大看。</p>
+              <div class="card-meta"><span>更新至 第 27 话</span><span class="score">8.9</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="cover">
+              <img src="https://picsum.photos/seed/bianlidian-riji17/400/300" width="400" height="300" loading="lazy" alt="便利店的第七天日常轻喜剧漫画封面">
+              <span class="badge">日常轻喜剧</span>
+              <span class="heat">8.5 分</span>
+            </div>
+            <div class="card-body">
+              <h3>便利店的第七天</h3>
+              <div class="tags"><span class="tag p">单元剧</span><span class="tag">打工日常</span><span class="tag">周更</span></div>
+              <p class="look">夜班店员遇到的各种奇怪客人，每话一个独立故事，任意一话都能进入。适合不想追长线、只想轻松读几话的人。</p>
+              <div class="card-meta"><span>更新至 第 34 话</span><span class="score">8.5</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="cover">
+              <img src="https://picsum.photos/seed/wuyu-zhiye03/400/300" width="400" height="300" loading="lazy" alt="雾语者奇幻冒险漫画封面">
+              <span class="badge">奇幻冒险</span>
+              <span class="heat">8.8 分</span>
+            </div>
+            <div class="card-body">
+              <h3>雾语者</h3>
+              <div class="tags"><span class="tag p">异世界</span><span class="tag">解谜</span><span class="tag">周更</span></div>
+              <p class="look">能听懂雾中低语的少年被卷入边境城镇的失踪案。设定交代得克制，前三话就能判断是否合口味，节奏偏紧凑。</p>
+              <div class="card-meta"><span>更新至 第 39 话</span><span class="score">8.8</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="cover">
+              <img src="https://picsum.photos/seed/qiuzhi-shiyan11/400/300" width="400" height="300" loading="lazy" alt="秋日食研所治愈生活漫画封面">
+              <span class="badge">治愈生活</span>
+              <span class="heat">8.6 分</span>
+            </div>
+            <div class="card-body">
+              <h3>秋日食研所</h3>
+              <div class="tags"><span class="tag p">美食日常</span><span class="tag">慢节奏</span><span class="tag">双周更</span></div>
+              <p class="look">一间只做当季食材的小食堂，每话围绕一道菜展开。人物关系推进很慢，但食物描写细致，适合睡前一话。</p>
+              <div class="card-meta"><span>更新至 第 22 话</span><span class="score">8.6</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="cover">
+              <img src="https://picsum.photos/seed/tiyu-shaonian09/400/300" width="400" height="300" loading="lazy" alt="逆风少年热血竞技漫画封面">
+              <span class="badge">热血竞技</span>
+              <span class="heat">8.4 分</span>
+            </div>
+            <div class="card-body">
+              <h3>逆风少年</h3>
+              <div class="tags"><span class="tag p">校园竞技</span><span class="tag">成长线</span><span class="tag">周更</span></div>
+              <p class="look">一支连败 12 场的校队重新组队，比赛分镜做得扎实。主角起步很弱，看点在于每场输赢都有具体的战术解释。</p>
+              <div class="card-meta"><span>更新至 第 55 话</span><span class="score">8.4</span></div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- 3 更新动态 -->
+      <section class="sec" id="updates">
+        <div class="sec-head">
+          <h2>今日更新与连载动态</h2>
+          <span class="sub">2026-11-25</span>
+        </div>
+        <div class="updates">
+          <div class="upd-row"><span class="upd-time">今天 09:12</span><span class="upd-name">雾港档案</span><span class="newflag">新</span><span class="upd-desc">第 42 话上线，法医线首次给出关键物证的来历。</span></div>
+          <div class="upd-row"><span class="upd-time">今天 08:40</span><span class="upd-name">十七岁的夏天</span><span class="newflag">新</span><span class="upd-desc">第 61 话更新，自习室的座位安排出现变化。</span></div>
+          <div class="upd-row"><span class="upd-time">今天 08:05</span><span class="upd-name">便利店的第七天</span><span class="upd-desc">第 34 话上线，单元剧回到夜班店员视角。</span></div>
+          <div class="upd-row"><span class="upd-time">今天 07:30</span><span class="upd-name">雾语者</span><span class="upd-desc">第 39 话更新，边境城镇的雾季提前到来。</span></div>
+          <div class="upd-row"><span class="upd-time">昨天 21:10</span><span class="upd-name">长安棋局</span><span class="upd-desc">第 88 话上线，科举案的第三方势力首次露面。</span></div>
+          <div class="upd-row"><span class="upd-time">昨天 20:02</span><span class="upd-name">逆风少年</span><span class="upd-desc">第 55 话更新，校队迎来本赛季第一场客场。</span></div>
+          <div class="upd-row"><span class="upd-time">昨天 18:45</span><span class="upd-name">秋日食研所</span><span class="upd-desc">第 22 话上线，本季最后一道时令菜收尾。</span></div>
+          <div class="upd-row"><span class="upd-time">11 月 23 日</span><span class="upd-name">星海启航</span><span class="upd-desc">第 27 话更新，打捞队进入休眠舱内部。</span></div>
+          <div class="upd-row"><span class="upd-time">11 月 22 日</span><span class="upd-name">旧城拾荒记</span><span class="upd-desc">新连载上线，首三话同步放出，都市悬疑题材。</span></div>
+          <div class="upd-row"><span class="upd-time">11 月 20 日</span><span class="upd-name">夏夜航班</span><span class="upd-desc">短篇实验系列完结，全 12 话一次性可补完。</span></div>
+          <div class="upd-row"><span class="upd-time">11 月 18 日</span><span class="upd-name">镜中人不说话</span><span class="upd-desc">第一季完结，共 16 话，第二季定档明年春季。</span></div>
+          <div class="upd-row"><span class="upd-time">11 月 15 日</span><span class="upd-name">纸鸢与少年</span><span class="upd-desc">更新频率由周更调整为双周更，单话页数增加。</span></div>
+        </div>
+      </section>
+
+      <!-- 4 分类入口 -->
+      <section class="sec" id="cats">
+        <div class="sec-head">
+          <h2>按题材找作品</h2>
+          <span class="sub">9 个垂类方向</span>
+        </div>
+        <div class="cats">
+          <a class="cat" href="/#picks"><b>都市悬疑</b><span>刑侦推理、旧案重启、双线叙事，信息密度高。</span></a>
+          <a class="cat" href="/#picks"><b>校园恋爱</b><span>青春日常、双向暗恋，单话短，追更门槛低。</span></a>
+          <a class="cat" href="/#picks"><b>古风权谋</b><span>朝堂博弈、群像势力，适合愿意投入时间的长线读者。</span></a>
+          <a class="cat" href="/#picks"><b>奇幻冒险</b><span>异世界设定、解谜推进，前三话定去留。</span></a>
+          <a class="cat" href="/#picks"><b>日常轻喜剧</b><span>单元剧结构，任意一话都能进入。</span></a>
+          <a class="cat" href="/#picks"><b>科幻赛博</b><span>太空歌剧、机甲，画面张力是主要卖点。</span></a>
+          <a class="cat" href="/#picks"><b>治愈生活</b><span>美食、慢节奏、生活流，适合睡前一话。</span></a>
+          <a class="cat" href="/#picks"><b>热血竞技</b><span>校园联赛、成长线，战术解释做得细。</span></a>
+          <a class="cat" href="/#picks"><b>短篇实验</b><span>10 到 20 话完结，题材大胆，适合碎片时间。</span></a>
+        </div>
+      </section>
+
+      <!-- 5 深度解析 -->
+      <section class="sec" id="deep">
+        <div class="sec-head">
+          <h2>深度解析：追更一部国产原创漫画前，先看这四件事</h2>
+        </div>
+        <div class="deep">
+          <p>很多读者选作品的依据是封面和题材标签，但真正影响追更体验的，往往是标签之外的东西。下面四组判断维度，来自对近一年在更条目的横向观察，能解释为什么同题材的两部作品，读起来差别会那么大。</p>
+
+          <h3>一、更新频率决定追更方式，而不是作品质量</h3>
+          <p>周更、双周更、月更，对应的是完全不同的阅读策略。周更作品单话通常 20 到 30 页，节奏快、悬念密，适合固定时间追；双周更和月更的单话页数会拉到 40 页以上，信息量更大，但如果按周更的节奏去追，很容易中途忘记前情。</p>
+          <ul>
+            <li><b>周更</b>：适合养成固定追更习惯，如《雾港档案》《十七岁的夏天》。</li>
+            <li><b>双周更</b>：单话信息密集，建议连着两话一起读，如《长安棋局》。</li>
+            <li><b>月更</b>：画面与世界观投入大，适合整季补看，如《星海启航》。</li>
+          </ul>
+
+          <h3>二、开篇三话的信息密度，比宣传语更能说明问题</h3>
+          <p>一部作品是否值得继续投入，前三话基本能给出答案。判断标准不是画风好坏，而是这三话里有没有把核心冲突、主角动机和世界规则交代清楚。有的作品第一话铺得很满，第二话开始明显降速；有的作品前两话平淡，第三话突然收紧线索。后者往往更值得等。</p>
+
+          <h3>三、单元剧与连续剧，是两种完全不同的消费方式</h3>
+          <p>单元剧每话一个独立事件，主线弱，好处是随时能停、随时能接；连续剧依赖前后文，跳读会丢失关键信息。两类作品不存在优劣，但选错类型会直接影响体验。</p>
+          <table class="cmp">
+            <thead>
+              <tr><th>对比项</th><th>单元剧</th><th>连续剧</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>代表作品</td><td>便利店的第七天</td><td>长安棋局、雾港档案</td></tr>
+              <tr><td>进入门槛</td><td>低，任意一话可读</td><td>中，需从第一话开始</td></tr>
+              <tr><td>适合场景</td><td>通勤、碎片时间</td><td>整块时间连续阅读</td></tr>
+              <tr><td>断更影响</td><td>小</td><td>大，前情容易断线</td></tr>
+            </tbody>
+          </table>
+
+          <h3>四、口碑分要看分布，不只看平均值</h3>
+          <p>同样是 8.7 分，有的作品是稳定高分，有的则是前几话拉高、后期掉分。比较实用的做法是看最近五话的读者反馈走向：如果评分集中在中段、且近期评论里反复出现“节奏变慢”“支线太多”这类描述，说明作品正在进入调整期，可以等一个阶段再补。</p>
+          <ul>
+            <li>连续三话评分下滑，通常是支线扩张导致主线推进变慢。</li>
+            <li>评论里高频出现具体角色名而非笼统夸奖，说明人物立得住。</li>
+            <li>完结作品看整体结构，在更作品看最近十话的稳定性。</li>
+          </ul>
+
+          <p>把这四点合起来看，选作品其实是一个先定节奏、再看开篇、最后核对口碑分布的过程。题材标签只是入口，真正决定你会不会追下去的，是这些更具体的结构信息。</p>
+        </div>
+      </section>
+
+      <!-- 6 阅读指南 -->
+      <section class="sec" id="guide">
+        <div class="sec-head">
+          <h2>新读者入坑顺序建议</h2>
+          <span class="sub">按投入时间从少到多</span>
+        </div>
+        <div class="steps">
+          <div class="step"><div><b>先从单元剧试水</b><p>用《便利店的第七天》任意一话感受画风与叙事节奏，单话十几分钟，判断自己是否吃得下这个题材的表达方式。</p></div></div>
+          <div class="step"><div><b>再读一部短篇实验完结作</b><p>《夏夜航班》全 12 话，一次读完能完整体验一部作品的结构起落，比追连载更容易建立判断标准。</p></div></div>
+          <div class="step"><div><b>挑一部周更连续剧开始追</b><p>《雾港档案》更新稳定、单话信息量适中，适合作为第一部长期追更的连续剧，前三话读完再决定是否留下。</p></div></div>
+          <div class="step"><div><b>最后进入长线群像</b><p>《长安棋局》人物多、势力复杂，建议等积累到 20 话以上再连着读，避免双周更带来的前情断裂。</p></div></div>
+        </div>
+      </section>
+
+      <!-- 7 FAQ -->
+      <section class="sec" id="faq">
+        <div class="sec-head">
+          <h2>新读者常见问题</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>国产原创漫画一般多久更新一话？</summary>
+            <div class="ans">主流是周更，单话 20 到 30 页；双周更作品单话会拉到 40 页左右；月更作品通常画面投入更大。更新频率在作品页会标注，追更前建议先确认，避免按错节奏等更。</div>
+          </details>
+          <details>
+            <summary>单元剧和连续剧有什么区别，该怎么选？</summary>
+            <div class="ans">单元剧每话一个独立事件，主线弱，任意一话都能进入；连续剧依赖前后文，跳读会丢线索。碎片时间多选单元剧，愿意整块时间连续阅读选连续剧。</div>
+          </details>
+          <details>
+            <summary>第一次接触，从哪一部开始看比较好？</summary>
+            <div class="ans">建议从《便利店的第七天》这类单元剧试水，再读一部完结短篇建立判断标准，之后挑《雾港档案》这类更新稳定的周更连续剧长期追。</div>
+          </details>
+          <details>
+            <summary>都市悬疑和奇幻冒险的阅读门槛差在哪？</summary>
+            <div class="ans">都市悬疑依托现实场景，规则不需要额外学习，进入快但要求读者跟住线索；奇幻冒险需要先接受一套世界设定，前三话的设定交代质量直接决定读起来顺不顺。</div>
+          </details>
+          <details>
+            <summary>口碑评分 8.5 分以上就一定好看吗？</summary>
+            <div class="ans">不一定。评分要结合分布看：如果近期连续几话评分下滑，或评论集中在节奏问题上，说明作品可能正在调整期。更实用的做法是看最近五话的读者反馈走向。</div>
+          </details>
+          <details>
+            <summary>双周更作品中途断更，还能接上吗？</summary>
+            <div class="ans">可以，但建议回看前一话结尾的关键线索。双周更和月更作品单话信息量大，隔得久容易忘记人物关系和伏笔，补读上一话通常比从头重看更有效率。</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 8 评论 -->
+      <section class="sec" id="comments">
+        <div class="sec-head">
+          <h2>读者在聊什么</h2>
+          <span class="sub">2026 年 11 月</span>
+        </div>
+        <div class="cmts">
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#7b2ff7">林</span><b>林间晚风</b><i>11-25</i></div><p>雾港档案第 42 话那个物证的来历一补，前面三十多话的细节全串起来了，这种回收挺过瘾。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#ff5c8a">苏</span><b>苏打气泡水</b><i>11-25</i></div><p>十七岁的夏天最近几话节奏有点慢，不过自习室那段细节写得很真，还是愿意追。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#1f9d6b">陈</span><b>陈年旧书</b><i>11-24</i></div><p>长安棋局人物太多了，双周更真的容易忘，我一般攒两话一起看，体验好很多。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#f0a020">阿</span><b>阿岚不熬夜</b><i>11-24</i></div><p>便利店的第七天适合睡前看，一话一个故事，不用记前情，这点很友好。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#b437a8">周</span><b>周末补番</b><i>11-23</i></div><p>星海启航的跨页是真的顶，就是月更等得有点久，建议攒三话再看。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#5aa9ff">小</span><b>小满日记</b><i>11-23</i></div><p>雾语者前三话设定交代得挺克制，不硬塞世界观，这点比很多同类作品舒服。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#7b2ff7">南</span><b>南桥旧梦</b><i>11-22</i></div><p>秋日食研所每话的菜都想照着做，虽然剧情推进慢，但看着很放松。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#ff5c8a">热</span><b>热心市民王</b><i>11-22</i></div><p>逆风少年的比赛分镜做得细，每个战术都有解释，不是光靠喊口号赢，这点加分。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#1f9d6b">一</span><b>一只咸鱼饼</b><i>11-21</i></div><p>夏夜航班全 12 话一次读完，结构完整，作为短篇实验真的可以。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#f0a020">半</span><b>半糖去冰</b><i>11-21</i></div><p>镜中人不说话第一季完结了，结尾留的钩子有点多，等第二季吧。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#b437a8">路</span><b>路灯下的猫</b><i>11-20</i></div><p>旧城拾荒记前三话一次放出来，节奏挺紧，就是画风还在找感觉，再观察几话。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#5aa9ff">三</span><b>三十七度</b><i>11-20</i></div><p>纸鸢与少年改双周更了，单话页数变多，其实内容更完整了，能接受。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#7b2ff7">木</span><b>木木不木</b><i>11-19</i></div><p>古风权谋里长安棋局算是把群像写明白的，每个配角都有自己目的，不是工具人。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#ff5c8a">柚</span><b>柚子茶三分糖</b><i>11-19</i></div><p>十七岁的夏天双向暗恋写得克制，就是更新有点慢，希望后面别拖。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#1f9d6b">老</span><b>老读者不催更</b><i>11-18</i></div><p>雾港档案第二季切法医视角这个选择挺大胆，目前看是把第一季没讲完的线补上了。</p></div>
+          <div class="cmt"><div class="who"><span class="avatar" style="background:#f0a020">星</span><b>星野拾光</b><i>11-17</i></div><p>科幻赛博这个题材在国漫里还是少，星海启航能坚持月更已经不容易了。</p></div>
+        </div>
+      </section>
+
+      <!-- 9 相关资讯 -->
+      <section class="sec" id="news">
+        <div class="sec-head">
+          <h2>近期相关资讯</h2>
+        </div>
+        <div class="news">
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/zixun-wugang42/600/400" width="600" height="400" loading="lazy" alt="雾港档案第二季开更资讯配图">
+            <div class="news-body">
+              <div class="dt">2026-11-25</div>
+              <h3>《雾港档案》第二季开更，法医线成为叙事新支点</h3>
+              <p>第二季前两话把视角从刑警转到法医，第一季留下的物证线索开始回收，读者讨论集中在叙事视角切换是否成立。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/zixun-xuanyi06/600/400" width="600" height="400" loading="lazy" alt="都市悬疑分类新增作品资讯配图">
+            <div class="news-body">
+              <div class="dt">2026-11-23</div>
+              <h3>都市悬疑分类本周新增 6 部作品，短篇占比过半</h3>
+              <p>新增条目中 4 部为 20 话以内的短篇实验作，题材集中在旧案重启与城市怪谈，入坑门槛明显下降。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/zixun-xiaye12/600/400" width="600" height="400" loading="lazy" alt="夏夜航班短篇完结资讯配图">
+            <div class="news-body">
+              <div class="dt">2026-11-20</div>
+              <h3>短篇实验《夏夜航班》完结，全 12 话可一次补完</h3>
+              <p>作为短篇实验系列的代表作之一，本作以完整结构收尾，评论里集中讨论结尾两话的叙事收束方式。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/zixun-zhiyuan08/600/400" width="600" height="400" loading="lazy" alt="纸鸢与少年更新频率调整资讯配图">
+            <div class="news-body">
+              <div class="dt">2026-11-15</div>
+              <h3>《纸鸢与少年》调整更新频率，改为双周更</h3>
+              <p>单话页数相应增加到 45 页左右，制作方表示调整后能保证画面完成度，读者反馈整体偏正面。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/zixun-jingzhong16/600/400" width="600" height="400" loading="lazy" alt="镜中人不说话第一季完结资讯配图">
+            <div class="news-body">
+              <div class="dt">2026-11-18</div>
+              <h3>《镜中人不说话》第一季完结，第二季定档明年春季</h3>
+              <p>第一季共 16 话，结尾保留了三条未解线索，社区讨论焦点集中在第二季能否在一开始就回收。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/zixun-pingfen09/600/400" width="600" height="400" loading="lazy" alt="读者评分分布讨论资讯配图">
+            <div class="news-body">
+              <div class="dt">2026-11-12</div>
+              <h3>读者讨论转向评分分布，单看平均分被认为参考性有限</h3>
+              <p>社区近期出现较多关于“看最近五话评分走向”的讨论，部分读者开始整理各作品的阶段性口碑变化。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 10 相关推荐 -->
+      <section class="sec" id="related">
+        <div class="sec-head">
+          <h2>延伸阅读方向</h2>
+          <span class="sub">按内容角度延伸</span>
+        </div>
+        <div class="relwrap">
+          <a class="rel" href="/#deep">刑侦推理的分镜节奏 <i>解析</i></a>
+          <a class="rel" href="/#deep">群像作品的势力梳理 <i>长安棋局</i></a>
+          <a class="rel" href="/#guide">单元剧的进入方式 <i>指南</i></a>
+          <a class="rel" href="/#picks">短篇实验题材盘点 <i>12 部</i></a>
+          <a class="rel" href="/#comments">双周更追更经验 <i>读者</i></a>
+          <a class="rel" href="/#faq">评分分布怎么看 <i>问答</i></a>
+          <a class="rel" href="/#timeline">连载时间线整理 <i>时间轴</i></a>
+          <a class="rel" href="/#picks">治愈生活类入坑 <i>慢节奏</i></a>
+        </div>
+      </section>
+
+      <!-- 11 口碑榜 + 时间线 -->
+      <section class="sec" id="rank">
+        <div class="sec-head">
+          <h2>本周口碑榜</h2>
+          <span class="sub">综合最近五话读者反馈</span>
+        </div>
+        <div class="panel" style="margin-bottom:22px">
+          <ol class="rank-list">
+            <li><div><div class="rk-t">雾港档案</div><div class="rk-m">都市悬疑 · 9.2 分 · 第 42 话</div></div></li>
+            <li><div><div class="rk-t">长安棋局</div><div class="rk-m">古风权谋 · 9.0 分 · 第 88 话</div></div></li>
+            <li><div><div class="rk-t">星海启航</div><div class="rk-m">科幻赛博 · 8.9 分 · 第 27 话</div></div></li>
+            <li><div><div class="rk-t">雾语者</div><div class="rk-m">奇幻冒险 · 8.8 分 · 第 39 话</div></div></li>
+            <li><div><div class="rk-t">十七岁的夏天</div><div class="rk-m">校园恋爱 · 8.7 分 · 第 61 话</div></div></li>
+            <li><div><div class="rk-t">秋日食研所</div><div class="rk-m">治愈生活 · 8.6 分 · 第 22 话</div></div></li>
+            <li><div><div class="rk-t">便利店的第七天</div><div class="rk-m">日常轻喜剧 · 8.5 分 · 第 34 话</div></div></li>
+            <li><div><div class="rk-t">逆风少年</div><div class="rk-m">热血竞技 · 8.4 分 · 第 55 话</div></div></li>
+          </ol>
+        </div>
+
+        <div class="sec-head" id="timeline">
+          <h2>近期连载时间线</h2>
+        </div>
+        <div class="timeline">
+          <div class="tl-item"><div class="tl-d">2026-11-25</div><b>雾港档案 第二季开更</b><p>第 42 话上线，法医线首次给出关键物证来源。</p></div>
+          <div class="tl-item"><div class="tl-d">2026-11-22</div><b>旧城拾荒记 新连载</b><p>首三话同步放出，都市悬疑题材，更新节奏定为周更。</p></div>
+          <div class="tl-item"><div class="tl-d">2026-11-20</div><b>夏夜航班 完结</b><p>短篇实验系列全 12 话收束，可一次补完。</p></div>
+          <div class="tl-item"><div class="tl-d">2026-11-18</div><b>镜中人不说话 第一季完结</b><p>共 16 话，第二季定档明年春季。</p></div>
+          <div class="tl-item"><div class="tl-d">2026-11-15</div><b>纸鸢与少年 调整更新频率</b><p>由周更改为双周更，单话页数增加至 45 页左右。</p></div>
+        </div>
+
+        <div class="quote" style="margin-top:22px">
+          <p>“我们看一部悬疑漫画，其实是在判断作者有没有能力把埋下的线索收回来。前两话抛出的东西，第三十话还在不在，这是最实在的标准。”</p>
+          <div class="by">—— 读者「老读者不催更」，评论于《雾港档案》第二季开更讨论区，2026-11-18</div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 右辅助栏 -->
+    <aside class="sidebar rail-right" aria-label="辅助栏">
+      <div class="panel">
+        <h3>今日更新</h3>
+        <ul class="rank-list">
+          <li><div><div class="rk-t">雾港档案</div><div class="rk-m">第 42 话 · 09:12</div></div></li>
+          <li><div><div class="rk-t">十七岁的夏天</div><div class="rk-m">第 61 话 · 08:40</div></div></li>
+          <li><div><div class="rk-t">便利店的第七天</div><div class="rk-m">第 34 话 · 08:05</div></div></li>
+          <li><div><div class="rk-t">雾语者</div><div class="rk-m">第 39 话 · 07:30</div></div></li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>热门标签</h3>
+        <div class="relwrap">
+          <a class="rel" href="/#picks">刑侦推理</a>
+          <a class="rel" href="/#picks">双向暗恋</a>
+          <a class="rel" href="/#picks">朝堂博弈</a>
+          <a class="rel" href="/#picks">单元剧</a>
+          <a class="rel" href="/#picks">太空歌剧</a>
+          <a class="rel" href="/#picks">美食日常</a>
+          <a class="rel" href="/#picks">校园竞技</a>
+          <a class="rel" href="/#picks">短篇完结</a>
+        </div>
+      </div>
+      <div class="panel">
+        <h3>新读者从这里开始</h3>
+        <ul class="chan-list">
+          <li><a href="/#guide">入坑顺序建议</a></li>
+          <li><a href="/#faq">更新频率问答</a></li>
+          <li><a href="/#deep">四组判断维度</a></li>
+          <li><a href="/#rank">本周口碑榜</a></li>
+        </ul>
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+<footer>
+  <div class="foot-in">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <b>51羞漫画</b>
+        <p>聚焦国产原创漫画的连载更新、题材索引与读者口碑，按更新节奏与内容结构整理具体条目，帮助读者判断一部作品现在是否值得投入时间。</p>
+      </div>
+      <div>
+        <h4>题材频道</h4>
+        <a href="/#cats">都市悬疑</a>
+        <a href="/#cats">校园恋爱</a>
+        <a href="/#cats">古风权谋</a>
+        <a href="/#cats">奇幻冒险</a>
+        <a href="/#cats">日常轻喜剧</a>
+      </div>
+      <div>
+        <h4>内容栏目</h4>
+        <a href="/#picks">精选推荐</a>
+        <a href="/#updates">更新动态</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">阅读指南</a>
+        <a href="/#faq">常见问答</a>
+      </div>
+      <div>
+        <h4>社区与榜单</h4>
+        <a href="/#rank">本周口碑榜</a>
+        <a href="/#timeline">连载时间线</a>
+        <a href="/#comments">读者讨论</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#related">延伸阅读</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>条目信息、评分与更新时间为站内整理示例，以实际作品页为准。</span>
+      <span>© 2026 51羞漫画 · 内容索引与读者社区</span>
+    </div>
+  </div>
+</footer>
+
+<button class="top-btn" type="button" aria-label="返回顶部" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+</body>
+  </html>
